@@ -7,6 +7,7 @@ var sticky = navigation.offsetTop;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navigation.classList.add("sticky");
+        navigation.classList.remove("responsive");
 
     } else {
         navigation.classList.remove("sticky");
@@ -16,9 +17,9 @@ function myFunction() {
 function mynav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-        x.className += " responsive";
+        navigation.classList.add("responsive");
     } else {
-        x.className = "topnav";
+         navigation.classList.remove("responsive");
     }
 
 }
