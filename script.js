@@ -7,7 +7,6 @@ var sticky = navigation.offsetTop;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navigation.classList.add("sticky");
-        navigation.classList.remove("responsive");
 
     } else {
         navigation.classList.remove("sticky");
